@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://cdn.pixabay.com/photo/2019/03/16/10/15/woman-4058770_1280.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor {
+  cursor: grab;
+}
+
+.view {
+  background: url("https://cdn.pixabay.com/photo/2012/02/25/18/46/arrangement-16858_1280.jpg")
+    center;
+  border-radius: 8px;
+  background-size: cover;
+}
+
+.imginfo {
+  background: url("https://cdn.pixabay.com/photo/2016/10/30/17/49/couple-1783843_1280.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
+
+/********* Header *********/
+
+.title {
+  font-family: "Anton", sans-serif;
+  animation-name: moveInLeft;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in;
+}
+
+.subtitle {
+  font-family: "Great Vibes", cursive;
+  animation-name: moveInRight;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    opacity: 0.5;
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes testingFrame {
+  0% {
+  }
+
+  100% {
+  }
+}
+
+.row {
+  font-family: "Vidaloka", serif;
+}
+
+/********* Clock *********/
+
+.Time {
+  margin-top: 50px;
+  margin-bottom: -60px;
+  font-family: "Wallpoet", cursive;
+  color: floralwhite;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 300px) {
+  .Time {
+    display: none;
+  }
+}

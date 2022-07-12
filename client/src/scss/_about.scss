@@ -1,0 +1,102 @@
+article {
+  margin: 10px;
+}
+
+div.art1 {
+  width: 80vh;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  margin: 20px auto;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.Elinor img {
+  width: 200px;
+  height: 200px;
+  float: right;
+  border-radius: 15px;
+}
+
+div.art1 img:hover {
+  transform: scale(1.2);
+  box-shadow: 15px 15px 15px $light;
+  transition: transform 2s;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 300px) {
+  div.art1 {
+    width: 60vh;
+  }
+}
+
+.imgabout {
+  background: url("https://cdn.pixabay.com/photo/2015/05/31/12/14/iphone-791450_1280.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
+div.box {
+  width: 60vh;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 20px auto;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+div.box1 {
+  color: $dark;
+  height: 65vh;
+}
+
+div.box2 {
+  color: $dark;
+  height: 55vh;
+}
+
+div.box3 {
+  color: $dark;
+  height: 75vh;
+}
+
+h2.titel1 {
+  color: $dark;
+  text-shadow: 5px 3px 2px $secondary;
+  text-align: center;
+  font-family: "Pattaya", sans-serif;
+}
+
+.main1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+div.box:hover {
+  box-shadow: 15px 15px 18px $light;
+  transition: box-shadow 1.3s;
+}
+
+main.main1 img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  float: left;
+}
+
+main.main1 img:hover {
+  transform: rotate(360deg);
+  transition: transform 2.5s;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 300px) {
+  main.main1 {
+    display: block;
+  }
+
+  div.box {
+    width: 60vh;
+    height: 80vh;
+  }
+}
